@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+/*font-family: 'Protest Revolution', sans-serif;*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    grid-area: titulo;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 7vw;
+    text-align: center;
+}
+h2{
+    grid-area: subtitulo;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.barra{
+    grid-area: header;
+    background-color: #fffcfc;
+    font-size: 10px;
+    font-family: 'Protest Revolution', sans-serif;
+    padding: 10px;
+    width: auto;
+}
+.barra a{
+    color:black;
+    text-decoration: none;
+
+}
+.barra a:hover{
+    color:gray;
+}
+.barra ul{
+    display: table;
+	list-style-type: none;
+	width:100%;
+}
+.barra li{
+    display: table-cell;
+	text-align: center;
+}
+.logo{
+    grid-area: logo;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.carta{
+    display: grid;
+        margin: auto;    
+        grid-template-columns: 100%;
+        grid-template-rows: 2% 55% 40% 0% 0% ;
+        grid-template-areas: 
+        "header"
+        "logo"
+        "titulo"
+        "texto"
+        "pie";
+        align-items: center;
+        justify-content: space-evenly;
+}
+.reservas{
+    display: grid;  
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 0% 155% -40% 0% ;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "titulo"
+    "formulario"
+    "pie";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.eventos{
+    display: grid;
+    margin: auto;    grid-template-columns: 100%;
+    grid-template-rows: 2% 82% 20% 0% 0% ;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "titulo"
+    "texto"
+    "pie";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nosotros{
+    display: grid;
+    margin: auto;    grid-template-columns: 100%;
+    grid-template-rows: 2% 82% 20% 0% 0% ;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "titulo"
+    "texto"
+    "pie";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2% 90% 0% 0%;
+    grid-template-areas: 
+    "header header"
+    "logo subtitulo"
+    "titulo formulario"
+    "pie pie";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.formulario{
+    grid-area:formulario;
+    text-align: center;
+}
+.mapa{
+    grid-area: mapa;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+}
+.texto{
+    grid-area: texto;
+    font-size: 3vw;
+}
+.fondo{
+    background-color: #427AA1;
+}
+.pie{
+    grid-area: pie;
+    background-color: #fffcfc;
+    height: 60px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+.pie a{
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.inicio{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2% 40% 45% 60% 0% 0%;
+        grid-template-areas: 
+        "header header"
+        "logo titulo"
+        "texto texto"
+        "subtitulo subtitulo"
+        "mapa mapa"
+        "pie pie";
+        align-items: center;
+        justify-content: space-evenly;
+}
+@media only screen and (min-width:480px){
+    .texto{
+        font-size: 2vw;
+    }
+    .barra{
+        font-size: 20px;
+    }
+    .logo{
+        height: 400px;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .inicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2% 45% 45% 60% 0% 0%;
+        grid-template-areas: 
+        "header header"
+        "logo titulo"
+        "logo texto"
+        "subtitulo subtitulo"
+        "mapa mapa"
+        "pie pie";
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .carta{
+        display: grid;
+        margin: auto;    
+        grid-template-columns: 100%;
+        grid-template-rows: 2% 45% 40% 0% 0% ;
+        grid-template-areas: 
+        "header"
+        "logo"
+        "titulo"
+        "texto"
+        "pie";
+        align-items: center;
+        justify-content: space-evenly;
+        }
+    .mapa{
+        height: 500px;
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
